@@ -1,0 +1,218 @@
+---
+name: Fiscal Ledger Modernism
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#43474d'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#74777e'
+  outline-variant: '#c3c6ce'
+  surface-tint: '#49607c'
+  primary: '#001428'
+  on-primary: '#ffffff'
+  primary-container: '#0f2942'
+  on-primary-container: '#7991af'
+  inverse-primary: '#b0c9e8'
+  secondary: '#006c4a'
+  on-secondary: '#ffffff'
+  secondary-container: '#82f5c1'
+  on-secondary-container: '#00714e'
+  tertiary: '#001524'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#002a44'
+  on-tertiary-container: '#2e95da'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#d1e4ff'
+  primary-fixed-dim: '#b0c9e8'
+  on-primary-fixed: '#011d35'
+  on-primary-fixed-variant: '#314863'
+  secondary-fixed: '#85f8c4'
+  secondary-fixed-dim: '#68dba9'
+  on-secondary-fixed: '#002114'
+  on-secondary-fixed-variant: '#005137'
+  tertiary-fixed: '#cce5ff'
+  tertiary-fixed-dim: '#93ccff'
+  on-tertiary-fixed: '#001d31'
+  on-tertiary-fixed-variant: '#004b73'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  display-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 34px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.03em
+  data-mono-md:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: 18px
+  data-mono-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-desktop: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system establishes a high-trust, disciplined, and technologically adept visual environment for vocational accounting education (SMK Akuntansi dan Keuangan Lembaga). It merges modern software utility with the rigorous precision of institutional financial tooling. 
+
+The aesthetic model is **Corporate Modern with Dense Data-Centric Utility**. It eschews decorative whimsy in favor of structural integrity, tabular clarity, high-contrast legibility, and crisp informational hierarchies. Interfaces must project stability, procedural rigor, and clarity, transforming complex ledger sheets, journals, and reconciliation tasks into intuitive, calm, and actionable digital learning environments.
+
+## Colors
+
+The color system operates on an institutional hierarchy rooted in financial balance:
+
+- **Primary (`#0F2942` Deep Navy / `#1E3A8A` Midnight Accent):** Symbolizes fiduciary responsibility, discipline, and institutional authority. Used for primary navigation shells, high-level headers, active structural frames, and primary call-to-actions.
+- **Secondary (`#059669` / `#10B981` Emerald Ledger):** Symbolizes accuracy, balanced accounts, verified entries, and successful module completion. Used selectively for credit validations, balanced badges, and confirmed actions.
+- **Tertiary (`#0284C7` Cyan/Cerulean):** Used for focal markers, interactive focus rings, active step indicators, hyperlinks, and simulated journal cursor indicators.
+- **Surface & Canvas (`#F8FAFC` Slate/Ice White with `#FFFFFF` Cards):** Ensures zero eye strain across extended double-entry journal auditing and ledger reviews.
+- **Semantic Signals:**
+  - *Balanced / Selesai:* Emerald (`#059669` text on `#ECFDF5` background).
+  - *Perlu Diperiksa (Pending/Review):* Amber (`#D97706` text on `#FFFBEB` background).
+  - *Terlambat / Unbalanced (Selisih):* Crimson (`#DC2626` text on `#FEF2F2` background).
+
+## Typography
+
+Typography prioritizes functional scannability:
+- **Headlines (Plus Jakarta Sans):** Provide modern, balanced authority with geometric clarity for section titles, competency modules, and performance overviews.
+- **Body & Labels (Inter):** Highly legible across variable screen densities. All numerical calculations, accounts, debits, credits, and ledger cells must activate CSS `font-variant-numeric: tabular-nums lining-nums` to guarantee vertical decimal alignment across rows.
+- **Data & Formula Overrides (JetBrains Mono):** Reserved for transaction IDs, voucher codes, general ledger chart-of-account numbers (Kode Akun), and real-time formula bars.
+
+## Layout & Spacing
+
+The layout employs a responsive, fluid 12-column grid system with fixed gutters tailored to structured enterprise tooling:
+- **Desktop (>= 1280px):** 12 columns, 24px gutters, 32px canvas margin. Max content container: 1600px for multi-column reconciliation workbenches.
+- **Tablet (768px - 1279px):** 8 columns, 16px gutters, 24px canvas margin.
+- **Mobile (< 768px):** 4 columns, 16px gutters, 16px canvas margin.
+
+A strict 4px/8px incremental rhythm is maintained. Spreadsheets and ledger views use a high-density vertical cadence (cell padding of 6px to 8px) to maximize visible balance sheet information above the fold.
+
+## Elevation & Depth
+
+This system avoids heavy shadows, using a combination of **low-contrast structural outlines** and **subtle surface stacking**:
+
+- **Level 0 (Canvas):** `#F8FAFC` base application background.
+- **Level 1 (Cards, Ledger Sheets):** `#FFFFFF` solid background with a 1px border of `#E2E8F0`. No shadow is needed in rest state.
+- **Level 2 (Dropdowns, Floating Palettes, Action Menus):** `#FFFFFF` with a 1px border of `#CBD5E1` and an ambient shadow: `0px 4px 16px rgba(15, 41, 66, 0.08)`.
+- **Level 3 (Modal Dialogs, Trial Balance Inspection Drawers):** `0px 12px 32px rgba(15, 41, 66, 0.16)`.
+- **Active Grid Cells / Selection Focus:** Zero blur, 2px solid `#0284C7` ring with a 1px white internal offset, replicating high-productivity accounting spreadsheet feedback.
+
+## Shapes
+
+The design system maintains a **Soft (`1`)** roundedness profile (4px base radius for form controls, 6px-8px for cards and containers).
+
+- **Grid Cells and Data Inputs:** 2px to 4px corners, reinforcing structural discipline.
+- **Cards and Module Panels:** 8px (`rounded-lg`), delivering crisp containment without distracting visual softness.
+- **Status Badges & Pill Tags:** Full pill radius (`rounded-full`) exclusively used for operational statuses to distinguish metadata from editable data cells.
+
+## Components
+
+### Buttons
+- **Primary:** Background `#0F2942`, text `#FFFFFF`, hover `#1E3A8A`, active `#0B1E30`. Padding: 8px 16px; border-radius: 4px.
+- **Secondary:** Surface `#FFFFFF`, border 1px solid `#CBD5E1`, text `#0F2942`, hover `#F1F5F9`.
+- **Success/Audit:** Background `#059669`, text `#FFFFFF`, hover `#047857`. Used for actions like "Tutup Buku" or "Validasi Jurnal".
+
+### Data Tables & Interactive Ledger Grid
+- **Header:** Background `#F1F5F9`, border-bottom 2px solid `#CBD5E1`, uppercase text in `label-sm` (`#475569`).
+- **Cells:** Border 1px solid `#E2E8F0`, padding 6px 12px.
+- **Alignment:** Alphanumeric/Kode Akun/Keterangan are left-aligned; Reference (Ref) is centered; Debit and Credit values are strictly right-aligned with monospace tabular figures (`font-variant-numeric: tabular-nums`).
+- **Total/Balance Row:** Background `#F8FAFC`, top border 1px solid `#0F2942`, bottom border double 3px solid `#0F2942`, bold weights.
+
+### Status Badges
+- Compact padding: 2px 8px, font-size 11px, weight 600, border radius `9999px`.
+- **Seimbang / Selesai:** Background `#ECFDF5`, text `#065F46`, border 1px solid `#A7F3D0`.
+- **Perlu Diperiksa:** Background `#FFFBEB`, text `#92400E`, border 1px solid `#FDE68A`.
+- **Terlambat / Selisih:** Background `#FEF2F2`, text `#991B1B`, border 1px solid `#FECACA`.
+
+### Input Fields & Transaction Rows
+- Standard inputs use 1px border `#CBD5E1`, background `#FFFFFF`, text `body-md`. Focus transitions to a 2px outline in `#0284C7`. Error validation displays a red inline label with `#DC2626`.
+
+### Cards & Metric Displays
+- **Metric Cards (KPIs):** Clean container with a 1px border `#E2E8F0`, top accent bar (3px) in Primary Navy or Emerald Green, displaying title, large tabular metric, and micro-trend indicator.

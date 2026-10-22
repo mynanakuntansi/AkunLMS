@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#c3c6ce","tertiary":"#001524","on-primary-container":"#7991af","primary":"#001428","surface-dim":"#cbdbf5","secondary":"#006c4a","on-primary-fixed":"#011d35","on-tertiary":"#ffffff","primary-fixed-dim":"#b0c9e8","secondary-container":"#82f5c1","on-tertiary-fixed-variant":"#004b73","tertiary-fixed":"#cce5ff","error":"#ba1a1a","outline":"#74777e","background":"#f8f9ff","inverse-primary":"#b0c9e8","surface":"#f8f9ff","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","primary-container":"#0f2942","surface-container-high":"#dce9ff","on-error":"#ffffff","surface-container-highest":"#d3e4fe","on-primary-fixed-variant":"#314863","surface-container-low":"#eff4ff","on-secondary-fixed-variant":"#005137","inverse-surface":"#213145","on-tertiary-container":"#2e95da","on-surface":"#0b1c30","on-tertiary-fixed":"#001d31","tertiary-container":"#002a44","on-surface-variant":"#43474d","on-secondary-container":"#00714e","on-background":"#0b1c30","secondary-fixed":"#85f8c4","on-error-container":"#93000a","on-primary":"#ffffff","tertiary-fixed-dim":"#93ccff","surface-bright":"#f8f9ff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","surface-container":"#e5eeff","surface-tint":"#49607c","on-secondary-fixed":"#002114","secondary-fixed-dim":"#68dba9","primary-fixed":"#d1e4ff","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2rem","space-xs":"0.25rem","gutter":"1rem"},"fontFamily":{"data-mono-sm":["JetBrains Mono"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"data-mono-md":["JetBrains Mono"],"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"]},"fontSize":{"data-mono-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"data-mono-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="AKUN LMS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UZhOg0Knbaquksko-EOsMXvPesvF2UzRJgEyldbtjgYJ5HkhZT0iREZUkJmbiv2rneSIbPIbcq3wSCgS2jLvcVIAodn_Mr3dh7wWxHeaWMiOVm58KrCj4AD5zmtyDGFX1frkxAseZ4NwCWfuHJ92h6vaAb_DvS-Nga-wMTt6ZQC7GGiSPKhoJG82Uf3Bmnhg-j57LrAJF38Pvbdnxby0YDCqYTCrHHZqsBH0YBYQq6CCDl8qmEJdEHX5Xm"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">AKUN LMS</span><span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">SMK Akuntansi</span></div></div><button class="p-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span></button></div><div class="px-space-md py-space-xs"><div class="p-space-xs rounded bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">TA 2024/2025 Genap</span></div><span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">v2.4</span></div></div><nav class="flex-1 px-space-sm py-space-xs overflow-y-auto space-y-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Menu Utama</p><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kelas-saya" href="#"><span class="material-symbols-outlined text-[20px]">class</span><span class="font-label-md text-label-md">Kelas Saya</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="daftar-siswa" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Daftar Siswa</span></a></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Pembelajaran</p><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="materi-pembelajaran" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">Materi Pembelajaran</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="lkpd-interaktif" href="#"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="font-label-md text-label-md">LKPD Interaktif</span><span class="ml-auto font-label-sm text-label-sm px-space-xs rounded-full bg-secondary-container text-on-secondary-container font-semibold">Jurnal</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tugas" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-md text-label-md">Tugas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kuis-dan-ujian" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-label-md text-label-md">Kuis &amp; Ujian</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="bank-soal" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-md text-label-md">Bank Soal</span></a></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Evaluasi</p><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="penilaian-dan-koreksi" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-md text-label-md">Penilaian &amp; Koreksi</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="rekap-nilai" href="#"><span class="material-symbols-outlined text-[20px]">calculate</span><span class="font-label-md text-label-md">Rekap Nilai</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="presensi" href="#"><span class="material-symbols-outlined text-[20px]">co_present</span><span class="font-label-md text-label-md">Presensi / Kehadiran</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analisis-pembelajaran" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-md text-label-md">Analisis Pembelajaran</span></a></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Komunikasi &amp; Sistem</p><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengumuman" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-md text-label-md">Pengumuman</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="diskusi-kelas" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Diskusi Kelas</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kalender-akademik" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-label-md text-label-md">Kalender Akademik</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Pengaturan</span></a></div></nav><div class="p-space-sm bg-surface-container-low"><div class="p-space-sm rounded bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Status Server</span><span class="font-data-mono-sm text-data-mono-sm text-secondary font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Terhubung</span></div><button class="text-on-surface-variant hover:text-on-surface p-space-xs rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">help</span></button></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative w-72"><label class="sr-only" for="class-select">Pilih Kelas</label><div class="relative"><select class="w-full appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md pl- space-sm pl-8 pr-8 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer" id="class-select"><option value="x-akl-1">X AKL 1 - Dasar Akuntansi</option><option value="x-akl-2">X AKL 2 - Dasar Akuntansi</option><option value="xi-akl-1">XI AKL 1 - Praktikum Lembaga</option><option value="xi-akl-2">XI AKL 2 - Akuntansi Keuangan</option><option value="xii-akl-1">XII AKL 1 - Perpajakan &amp; Spreadsheet</option></select><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">school</span><span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span></div></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Cari materi, LKPD, jurnal, transaksi, siswa..." type="text"/></div></div><div class="flex items-center gap-space-sm"><button class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-2 rounded font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>+ Buat</span></button><button class="inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-secondary-container text-on-secondary-container hover:opacity-90 font-label-sm text-label-sm transition-opacity" title="Ganti peran peraga" type="button"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-semibold">Mode Guru</span><span class="text-[11px] opacity-75">• Switch Siswa</span></button><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-error px-1 text-[10px] font-bold text-on-error">4</span></button><div class="flex items-center gap-space-sm pl-space-sm ml-space-xs"><div class="text-right hidden xl:block"><p class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Ibu Ratna Dewi, S.Pd.</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-none">Guru Produktif AKL</p></div><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCVPZlEtM1cWxM21ZbXYnnpq0mCIuCssl65ZhgPWfYL7i_gdK4TLvCPWUes4LjNeM065ytWbR2NbJ-XlnQzKPaDx-j5NcBcC-Q50h_tF1W-w7gGXbY2N5uaFSl6-az_vIu9LRE8NUJvoAZ1wbfmijGlimFvmPNO864hs4aEnAis697OTcwNTMr77qGphHxeNgblpOsDXtdzSF7WYSE08-jdc-keuePPXHNZF7ud_2A1DyHpzG7Mc-dqA"/></div></div></header><main class="relative pt-16 flex-1 w-full p-space-lg bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Top Action Notification Banner -->
+<div class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-lg bg-surface-container-low px-4 py-2.5 text-on-surface shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Bank Soal Terverifikasi</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sinkronisasi Capaian Pembelajaran Kurikulum Merdeka (Kepmendikbudristek No. 262/M/2022) Aktif untuk Fase E</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">ID Repositori: <span class="font-semibold text-primary">AKL-E-2025.G</span></span>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" onclick="alert('Log audit riwayat pembaruan kurikulum telah tersinkronisasi.')">
+<span class="material-symbols-outlined text-[14px]">history</span> Riwayat Versi
+      </button>
+</div>
+</div>
+<!-- Breadcrumb & Header Section -->
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-6 mb-8">
+<div class="space-y-2 max-w-3xl">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Pembelajaran</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span>Evaluasi &amp; Portofolio</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary">Bank Soal &amp; Manajemen CBT</span>
+</nav>
+<!-- Title & Description -->
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Bank Soal &amp; Manajemen Kuis CBT Akuntansi</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Kelola repositori butir soal Kurikulum Merdeka (Fase E/F), susun paket ujian berbasis komputer (CBT), serta atur parameter pengacakan dan penilaian otomatis untuk kompetensi Keahlian Akuntansi dan Keuangan Lembaga.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-2.5 self-start xl:self-center">
+<button class="inline-flex items-center gap-2 rounded bg-surface-container-lowest px-3.5 py-2 text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" onclick="document.getElementById('import-dialog').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_upload</span>
+<span>Impor Excel / Word</span>
+</button>
+<button class="inline-flex items-center gap-2 rounded bg-surface-container-lowest px-3.5 py-2 text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">print</span>
+<span>Cetak Naskah (PDF)</span>
+</button>
+<div class="relative inline-block text-left" id="action-dropdown-wrapper">
+<button class="inline-flex items-center gap-2 rounded bg-primary-container px-4 py-2 text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-colors" onclick="const m = document.getElementById('new-item-menu'); m.classList.toggle('hidden');">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>+ Buat Soal / Paket</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-56 rounded-lg bg-surface-container-lowest shadow-xl z-30 py-1 text-on-surface" id="new-item-menu">
+<button class="w-full text-left px-4 py-2.5 font-label-md text-label-md hover:bg-surface-container-low flex items-center gap-2" onclick="alert('Buka Form Editor Butir Soal Baru'); this.parentElement.classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px] text-secondary">post_add</span>
+<span>Tambah Butir Soal Baru</span>
+</button>
+<button class="w-full text-left px-4 py-2.5 font-label-md text-label-md hover:bg-surface-container-low flex items-center gap-2" onclick="alert('Membuat Paket Ujian CBT Baru'); this.parentElement.classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px] text-primary">dynamic_form</span>
+<span>Buat Paket CBT Kosong</span>
+</button>
+<button class="w-full text-left px-4 py-2.5 font-label-md text-label-md hover:bg-surface-container-low flex items-center gap-2" onclick="alert('Buka Generator AI Soal Transaksi Jurnal'); this.parentElement.classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">auto_awesome</span>
+<span>Generate Soal AI (Studi Kasus)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- KPI Stat Counters Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<!-- Card 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Total Butir Soal</span>
+<span class="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">quiz</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg font-bold text-primary tracking-tight">342</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">+18 bln ini</span>
+</div>
+<div class="grid grid-cols-2 gap-y-1 font-body-sm text-body-sm text-on-surface-variant pt-2 border-t border-surface-container">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 210 Pil. Ganda</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 65 Kasus Hitungan</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span> 42 Benar/Salah</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span> 25 Uraian LKPD</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Paket Kuis / Ujian Aktif</span>
+<span class="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">6</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Tersedia</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mb-2">UTS Genap, Kuis Jurnal Bab 3, Ujian Praktik Neraca</p>
+<div class="w-full bg-surface-container-low rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-tint"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Rata-rata Kesukaran</span>
+<span class="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</span>
+</div>
+<div class="flex items-baseline gap-1.5 mb-2">
+<span class="font-title-md text-title-md font-bold text-primary">32%</span>
+<span class="text-[11px] text-on-surface-variant">Mdh</span>
+<span class="text-outline-variant">•</span>
+<span class="font-title-md text-title-md font-bold text-on-secondary-container">54%</span>
+<span class="text-[11px] text-on-surface-variant">Sdg</span>
+<span class="text-outline-variant">•</span>
+<span class="font-title-md text-title-md font-bold text-error">14%</span>
+<span class="text-[11px] text-on-surface-variant">Skr</span>
+</div>
+<!-- Mini Stacked Bar Visual -->
+<div class="w-full flex h-2 rounded-full overflow-hidden bg-surface-container mb-2">
+<div class="bg-secondary h-full" style="width: 32%" title="Mudah: 32%"></div>
+<div class="bg-surface-tint h-full" style="width: 54%" title="Sedang: 54%"></div>
+<div class="bg-error h-full" style="width: 14%" title="Sukar: 14%"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant block">Ideal Bloom C2–C5 (AKL Terverifikasi)</span>
+</div>
+<!-- Card 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary-container"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-on-surface-variant">Distribusi Capaian (CP)</span>
+<span class="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-display-lg text-display-lg font-bold text-primary tracking-tight">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Elemen Kurikulum</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 100% Terpetakan
+        </span>
+<span class="text-outline-variant text-xs">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fase E X AKL</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Tabs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-surface-container mb-6">
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0">
+<button class="relative py-3 px-5 font-label-md text-label-md font-bold text-primary flex items-center gap-2 group whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span>Katalog Bank Soal</span>
+<span class="rounded-full bg-primary-container px-2 py-0.5 font-data-mono-sm text-data-mono-sm text-on-primary">342</span>
+<span class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary"></span>
+</button>
+<button class="relative py-3 px-5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-2 group whitespace-nowrap transition-colors" onclick="alert('Membuka tab manajemen penjadwalan paket CBT')">
+<span class="material-symbols-outlined text-[18px]">splitscreen</span>
+<span>Paket Kuis &amp; Penjadwalan CBT</span>
+<span class="rounded-full bg-surface-container px-2 py-0.5 font-data-mono-sm text-data-mono-sm text-on-surface-variant">6</span>
+</button>
+<button class="relative py-3 px-5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-2 group whitespace-nowrap transition-colors" onclick="alert('Membuka konfigurasi generator acak &amp; anti-cheat CBT')">
+<span class="material-symbols-outlined text-[18px]">shuffle</span>
+<span>Konfigurasi Generator &amp; Aturan Ujian</span>
+</button>
+</div>
+<!-- Quick Stats in Tab Bar -->
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm pb-2 md:pb-0">
+<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Auto-scoring Aktif</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Modul Spreadsheet Jurnal V2.4</span>
+</div>
+</div>
+<!-- Advanced Filtering Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm mb-6 flex flex-col gap-4">
+<!-- Top Search & Quick Toggle Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-outline pointer-events-none">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-10 pr-4 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Cari kata kunci butir soal, transaksi, akun (Kas, Utang, Prive), CoA 1-1000..." type="text"/>
+</div>
+<!-- Toggle View Answers -->
+<div class="flex items-center justify-between sm:justify-end gap-3">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="sr-only peer" id="toggle-key-view" onchange="document.querySelectorAll('.discussion-box').forEach(el =&gt; el.classList.toggle('hidden'))" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Tampilkan Kunci &amp; Pembahasan</span>
+</label>
+<button class="flex items-center gap-1 rounded bg-surface-container-low px-3 py-2 font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" onclick="alert('Filter telah direset ke default Fase E')">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Filter</span>
+</button>
+</div>
+</div>
+<!-- Filter Dropdowns Row -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5 pt-2 border-t border-surface-container">
+<!-- Fase / Kelas -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Fase / Kelas</label>
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option selected="">Fase E - X AKL (Dasar Akuntansi)</option>
+<option>Fase F - XI AKL (Praktikum Jasa &amp; Dagang)</option>
+<option>Fase F - XII AKL (Lembaga &amp; Perpajakan)</option>
+</select>
+</div>
+<!-- Elemen CP -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Capaian Pembelajaran (CP)</label>
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option selected="">Semua CP (Fase E)</option>
+<option>CP.01 Proses Bisnis Akuntansi</option>
+<option>CP.02 Saldo Normal &amp; Persamaan Dasar</option>
+<option>CP.03 Siklus Akuntansi &amp; Jurnal Umum</option>
+<option>CP.04 Buku Besar &amp; Kas Kecil</option>
+<option>CP.05 Jurnal Penyesuaian &amp; Neraca</option>
+</select>
+</div>
+<!-- Tingkat Kesulitan -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Tingkat Kesulitan</label>
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option selected="">Semua Kesulitan</option>
+<option>Mudah (C1 - C2 Ingatan &amp; Pemahaman)</option>
+<option>Sedang (C3 Penerapan &amp; Posting)</option>
+<option>Sukar / HOTS (C4 - C5 Analisis &amp; Rekonsiliasi)</option>
+</select>
+</div>
+<!-- Tipe Butir Soal -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Bentuk Soal</label>
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option selected="">Semua Tipe Soal</option>
+<option>Pilihan Ganda Tunggal (A-E)</option>
+<option>Pilihan Ganda Kompleks (Majemuk)</option>
+<option>Benar / Salah (Persamaan Dasar)</option>
+<option>Menjodohkan Akun &amp; Kode</option>
+<option>Hitungan &amp; Lembar Jurnal</option>
+</select>
+</div>
+<!-- Status Verifikasi -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-semibold">Status Kurasi Guru</label>
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer">
+<option selected="">Semua Status</option>
+<option>Terverifikasi MGMP AKL</option>
+<option>Draf Belum Divalidasi</option>
+<option>Pernah Diujikan (Bank Aktif)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Content Split: Soal List (Left 8 Cols) + Exam Builder Drawer (Right 4 Cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT: Interactive Item Bank Listing (8 Cols) -->
+<div class="lg:col-span-8 space-y-6">
+<!-- List Metadata Bar -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<input class="rounded w-4 h-4 text-primary focus:ring-primary-container cursor-pointer" id="select-all-items" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface cursor-pointer select-none" for="select-all-items">Pilih Semua di Halaman ini (3 Butir Ditampilkan)</label>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Urutan: <strong>Terbaru Diperbarui</strong></span>
+<span class="material-symbols-outlined text-[16px] cursor-pointer">swap_vert</span>
+</div>
+</div>
+<!-- SOAL 1: Studi Kasus Hitungan & Jurnal Umum -->
+<article class="rounded-xl bg-surface-container-lowest p-6 shadow-sm transition-all hover:shadow-md border-l-4 border-l-primary">
+<!-- Item Header Tags -->
+<div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-surface-container">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-low text-primary font-semibold">
+              #SOAL-JU-104
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-variant text-on-surface font-medium">
+              CP.03 Jurnal Umum
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-amber-100 text-amber-900 font-medium">
+              Sedang (C3)
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant">
+              Pilihan Ganda
+            </span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary ml-1">
+              Bobot: 10 Poin
+            </span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Pratinjau Siswa">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Duplikasi Butir">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Edit Soal">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<!-- Stimulus Soal -->
+<div class="space-y-3 mb-5">
+<div class="flex items-start gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1.</span>
+<div class="space-y-2 text-on-surface font-body-md text-body-md">
+<p>
+                Diterima faktur No. F-104 tertanggal 14 Mei 2025 dari Toko Sentosa atas pembelian perlengkapan salon sebesar <strong class="font-data-mono-md text-data-mono-md text-primary font-bold">Rp3.500.000,00</strong> dengan syarat pembayaran <strong class="font-semibold text-primary">2/10, n/30</strong>.
+              </p>
+<p class="font-medium text-on-surface-variant">
+                Berdasarkan bukti transaksi tersebut, analisis pencatatan yang benar dan tepat ke dalam Jurnal Umum adalah...
+              </p>
+</div>
+</div>
+</div>
+<!-- Pilihan Jawaban (Options List) -->
+<div class="space-y-2 mb-5 pl-7">
+<!-- Opsi A (Salah) -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant w-5">A.</span>
+<div class="flex-1 font-body-md text-body-md text-on-surface">
+              Perlengkapan Salon (D) Rp3.500.000 ; Kas di Bank (K) Rp3.500.000
+            </div>
+</div>
+<!-- Opsi B (BENAR - KUNCI) -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-emerald-50 border-2 border-emerald-400 relative">
+<span class="font-label-md text-label-md font-bold text-emerald-900 w-5">B.</span>
+<div class="flex-1 font-body-md text-body-md text-emerald-950 font-medium">
+<span>Perlengkapan Salon (D) Rp3.500.000 ; Utang Usaha (K) Rp3.500.000</span>
+<span class="inline-flex items-center gap-1 ml-3 px-2 py-0.5 rounded-full bg-emerald-200 text-emerald-900 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> Kunci Jawaban Resmi
+              </span>
+</div>
+</div>
+<!-- Opsi C (Salah) -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant w-5">C.</span>
+<div class="flex-1 font-body-md text-body-md text-on-surface">
+              Beban Perlengkapan (D) Rp3.500.000 ; Utang Usaha (K) Rp3.500.000
+            </div>
+</div>
+<!-- Opsi D (Salah) -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant w-5">D.</span>
+<div class="flex-1 font-body-md text-body-md text-on-surface">
+              Peralatan Salon (D) Rp3.500.000 ; Kas (K) Rp3.500.000
+            </div>
+</div>
+<!-- Opsi E (Salah) -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant w-5">E.</span>
+<div class="flex-1 font-body-md text-body-md text-on-surface">
+              Utang Usaha (D) Rp3.500.000 ; Perlengkapan Salon (K) Rp3.500.000
+            </div>
+</div>
+</div>
+<!-- Kotak Pembahasan & Analisis Guru -->
+<div class="discussion-box bg-surface-container-low rounded-lg p-4 mb-4 text-on-surface ml-7 border-l-2 border-l-secondary">
+<div class="flex items-center gap-2 mb-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>Pembahasan &amp; Analisis Pedagogis:</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dokumen <strong>Faktur</strong> menunjukkan transaksi pembelian secara <em>kredit</em> (diperkuat syarat termin <code>2/10, n/30</code>). Pembelian perlengkapan (aset lancar) bertambah di sisi <strong>DEBIT</strong> sebesar Rp3.500.000, dan kewajiban berupa Utang Usaha bertambah di sisi <strong>KREDIT</strong> sebesar nilai yang sama. Siswa yang memilih Opsi A terkecoh menganggap pembelian tunai.
+          </p>
+</div>
+<!-- Item Action Footer -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-surface-container pl-7">
+<div class="flex items-center gap-2 font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+<span>CoA Relevan: <span class="bg-surface-container px-1.5 py-0.5 rounded text-primary">1-1400 Perlengkapan</span>, <span class="bg-surface-container px-1.5 py-0.5 rounded text-primary">2-1100 Utang</span></span>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high px-3 py-1.5 font-label-sm text-label-sm text-on-surface font-semibold transition-colors" onclick="alert('Soal #SOAL-JU-104 berhasil ditambahkan ke keranjang paket!')">
+<span class="material-symbols-outlined text-[16px] text-secondary">add_shopping_cart</span>
+<span>+ Masukkan ke CBT Basket</span>
+</button>
+</div>
+</div>
+</article>
+<!-- SOAL 2: Analisis Saldo Normal & Persamaan Dasar (Benar/Salah) -->
+<article class="rounded-xl bg-surface-container-lowest p-6 shadow-sm transition-all hover:shadow-md border-l-4 border-l-secondary">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-surface-container">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-low text-primary font-semibold">
+              #SOAL-SN-042
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-semibold">
+              CP.02 Saldo Normal Akun
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 font-medium">
+              Mudah (C2)
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant">
+              Benar / Salah
+            </span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary ml-1">
+              Bobot: 5 Poin
+            </span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Pratinjau Siswa">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Edit Soal">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<div class="space-y-3 mb-5">
+<div class="flex items-start gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">2.</span>
+<div class="space-y-2 text-on-surface font-body-md text-body-md">
+<p>
+                Perhatikan pernyataan akuntansi berikut:
+              </p>
+<blockquote class="p-3 bg-surface-container-low rounded-lg italic text-on-surface border-l-2 border-primary">
+                "Prive (penarikan aset oleh pemilik untuk kepentingan pribadi) mengakibatkan ekuitas pemilik berkurang. Oleh karena itu, akun Prive mempunyai saldo normal di sisi <strong>DEBIT</strong> dan penambahannya dicatat di posisi <strong>DEBIT</strong>."
+              </blockquote>
+<p class="font-medium text-on-surface-variant">
+                Tentukan apakah pernyataan konseptual akuntansi di atas Benar atau Salah:
+              </p>
+</div>
+</div>
+</div>
+<!-- True / False Interactive Options -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5 pl-7 max-w-xl">
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-emerald-50 border-2 border-emerald-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-700">task_alt</span>
+<span class="font-label-md text-label-md font-bold text-emerald-950">BENAR (Kunci Valid)</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-emerald-800 font-bold">100% Skor</span>
+</div>
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low opacity-60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">cancel</span>
+<span class="font-label-md text-label-md font-medium text-on-surface-variant">SALAH</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-outline">0%</span>
+</div>
+</div>
+<!-- Pembahasan -->
+<div class="discussion-box bg-surface-container-low rounded-lg p-4 mb-4 text-on-surface ml-7 border-l-2 border-l-secondary">
+<div class="flex items-center gap-2 mb-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>Keterangan Validasi:</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Meskipun ekuitas modal pemilik bertambah di sisi Kredit, akun <strong>Prive</strong> merupakan akun kontra ekuitas (mengurangi modal). Karena sifatnya yang mengurangi modal, pertambahan prive dicatat di sisi <strong>Debit</strong>, sehingga saldo normalnya adalah <strong>Debit</strong>. Pernyataan di atas adalah <strong>BENAR</strong>.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-surface-container pl-7">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Indikator: Menentukan posisi debit/kredit akun kontra modal</span>
+<button class="inline-flex items-center gap-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high px-3 py-1.5 font-label-sm text-label-sm text-on-surface font-semibold transition-colors" onclick="alert('Soal #SOAL-SN-042 dimasukkan ke paket ujian!')">
+<span class="material-symbols-outlined text-[16px] text-secondary">add_shopping_cart</span>
+<span>+ Masukkan ke CBT Basket</span>
+</button>
+</div>
+</article>
+<!-- SOAL 3: Analisis Bukti Transaksi Kompleks / HOTS -->
+<article class="rounded-xl bg-surface-container-lowest p-6 shadow-sm transition-all hover:shadow-md border-l-4 border-l-error">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-surface-container">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-low text-primary font-semibold">
+              #SOAL-HOTS-019
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-variant text-on-surface font-medium">
+              CP.04 Kas &amp; Rekonsiliasi Bank
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-rose-100 text-rose-900 font-semibold">
+              Sukar / HOTS (C4-C5)
+            </span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant">
+              Pilihan Ganda Kompleks
+            </span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary ml-1">
+              Bobot: 15 Poin
+            </span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm bg-primary text-on-primary px-2 py-0.5 rounded font-bold">Soal Uji Coba</span>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Edit Soal">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</div>
+<div class="space-y-4 mb-5">
+<div class="flex items-start gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">3.</span>
+<div class="space-y-3 text-on-surface font-body-md text-body-md w-full">
+<p>
+                Perhatikan dokumen memo kas keluar No. BKK-05 berikut yang diterbitkan oleh UD Makmur Abadi pada tanggal 28 April 2025:
+              </p>
+<!-- Stylized Micro Fiscal Document Table -->
+<div class="overflow-x-auto rounded-lg bg-surface-container-low p-3.5 border border-surface-container">
+<div class="flex justify-between items-center mb-2 pb-2 border-b border-surface-container">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold block text-sm">UD MAKMUR ABADI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jl. Sudirman No. 45, Bandung</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm font-bold uppercase text-primary">BUKTI KAS KELUAR</span>
+<span class="font-data-mono-sm text-data-mono-sm block text-on-surface-variant">No: BKK-05 | Tgl: 28/04/2025</span>
+</div>
+</div>
+<div class="text-xs space-y-1 py-1">
+<div class="grid grid-cols-12 gap-2">
+<span class="col-span-3 text-on-surface-variant">Dibayarkan Kepada:</span>
+<span class="col-span-9 font-semibold text-on-surface">Bank Mandiri (Pelunasan Pinjaman Pokok + Bunga)</span>
+</div>
+<div class="grid grid-cols-12 gap-2">
+<span class="col-span-3 text-on-surface-variant">Jumlah Uang:</span>
+<span class="col-span-9 font-data-mono-md text-data-mono-md font-bold text-primary">Rp10.750.000,00</span>
+</div>
+<div class="grid grid-cols-12 gap-2">
+<span class="col-span-3 text-on-surface-variant">Keterangan:</span>
+<span class="col-span-9 text-on-surface">Pelunasan angsuran Utang Bank ke-12 sebesar Rp10.000.000,- dan beban bunga pinjaman periode berjalan Rp750.000,- via transfer bank.</span>
+</div>
+</div>
+</div>
+<p class="font-medium text-on-surface-variant">
+                Pencatatan compound entry (jurnal majemuk) yang benar pada Jurnal Pengeluaran Kas UD Makmur Abadi adalah:
+              </p>
+</div>
+</div>
+</div>
+<!-- Options for Soal 3 -->
+<div class="space-y-2 mb-5 pl-7">
+<!-- A (Salah) -->
+<div class="p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant mr-2">A.</span>
+<span class="font-body-md text-body-md text-on-surface">
+              Utang Bank (D) Rp10.750.000 ; Kas di Bank (K) Rp10.750.000
+            </span>
+</div>
+<!-- B (BENAR) -->
+<div class="p-3 rounded-lg bg-emerald-50 border-2 border-emerald-400">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-md text-label-md font-bold text-emerald-900 mr-2">B.</span>
+<span class="font-body-md text-body-md text-emerald-950 font-medium">
+                  Utang Bank (D) Rp10.000.000 ; Beban Bunga (D) Rp750.000 ; Kas / Bank (K) Rp10.750.000
+                </span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-200 text-emerald-900 font-label-sm text-label-sm font-bold whitespace-nowrap">
+<span class="material-symbols-outlined text-[14px]">check</span> Kunci Benar
+              </span>
+</div>
+</div>
+<!-- C (Salah) -->
+<div class="p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant mr-2">C.</span>
+<span class="font-body-md text-body-md text-on-surface">
+              Beban Bunga (D) Rp10.750.000 ; Kas / Bank (K) Rp10.750.000
+            </span>
+</div>
+<!-- D (Salah) -->
+<div class="p-3 rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md font-bold text-on-surface-variant mr-2">D.</span>
+<span class="font-body-md text-body-md text-on-surface">
+              Kas di Bank (D) Rp10.750.000 ; Utang Bank (K) Rp10.000.000 ; Beban Bunga (K) Rp750.000
+            </span>
+</div>
+</div>
+<!-- Pembahasan Soal 3 -->
+<div class="discussion-box bg-surface-container-low rounded-lg p-4 mb-4 text-on-surface ml-7 border-l-2 border-l-secondary">
+<div class="flex items-center gap-2 mb-1.5 text-secondary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Analisis Beban Bunga &amp; Pokok Utang (Pedagogis HOTS):</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pembayaran angsuran bank terdiri dari dua elemen: pelunasan liabilitas pokok (mengurangi Utang Bank di DEBIT Rp10.000.000) dan pengakuan biaya bunga modal (menambah Beban Bunga di DEBIT Rp750.000). Total kas keluar di sisi KREDIT adalah penjumlahan keduanya (Rp10.750.000). Prinsip keseimbangan debit dan kredit tetap terjaga (Balance: Rp10.750.000).
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-surface-container pl-7">
+<div class="flex items-center gap-2 text-on-surface-variant font-data-mono-sm text-data-mono-sm">
+<span>Tingkat Ketercapaian Siswa: <strong class="text-secondary font-bold">68.4% Lulus</strong></span>
+</div>
+<button class="inline-flex items-center gap-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high px-3 py-1.5 font-label-sm text-label-sm text-on-surface font-semibold transition-colors" onclick="alert('Soal #SOAL-HOTS-019 dimasukkan ke paket ujian!')">
+<span class="material-symbols-outlined text-[16px] text-secondary">add_shopping_cart</span>
+<span>+ Masukkan ke CBT Basket</span>
+</button>
+</div>
+</article>
+<!-- Pagination -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 pb-12">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menampilkan 1 - 3 dari 342 butir soal tersimpan</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface-variant disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-primary text-on-primary font-semibold text-xs">1</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container text-xs">2</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container text-xs">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container text-xs">114</button>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT: Interactive Exam Builder Basket & CBT Drawer (4 Cols) -->
+<div class="lg:col-span-4 sticky top-20 space-y-4">
+<!-- Exam Basket Card -->
+<div class="rounded-xl bg-surface-container-lowest p-5 shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary text-base">CBT Exam Builder</h2>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Keranjang Penyusunan Naskah</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-variant text-on-surface font-bold">Draf #04</span>
+</div>
+<!-- Package Name Input -->
+<div class="mt-4 space-y-1.5">
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-semibold">Nama Paket Ujian CBT</label>
+<input class="w-full bg-surface-container-low text-on-surface font-title-md text-title-md font-semibold px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-container" type="text" value="Penilaian Formatif 2 - Jurnal &amp; Buku Besar"/>
+</div>
+<!-- Target Class & Teacher Assigned -->
+<div class="grid grid-cols-2 gap-2 mt-3 text-xs">
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-on-surface-variant block">Target Rombel:</span>
+<span class="font-semibold text-primary">X AKL 1 &amp; X AKL 2</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded">
+<span class="text-on-surface-variant block">Alokasi Waktu:</span>
+<span class="font-semibold text-primary">60 Menit</span>
+</div>
+</div>
+<!-- Quota & Progress Meter -->
+<div class="mt-4 p-3 bg-surface-container-low rounded-lg space-y-2">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Target Butir Soal Terpilih:</span>
+<span class="font-data-mono-md text-data-mono-md text-primary font-bold">18 / 20 Soal</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full transition-all duration-300" style="width: 90%"></div>
+</div>
+<div class="flex justify-between items-center text-[11px] text-on-surface-variant">
+<span>Total Akumulasi Skor: <strong class="text-primary">90 / 100 Poin</strong></span>
+<span class="text-error font-semibold">Kurang 2 Soal</span>
+</div>
+</div>
+<!-- Composition Summary Tags -->
+<div class="mt-4 space-y-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold block">Komposisi Paket Saat Ini:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">12 PG Tunggal</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">4 Kasus Jurnal</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">2 Benar/Salah</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold">KKTP: 75.0</span>
+</div>
+</div>
+<!-- CBT Security & Anti-Cheat Rules (Toggles) -->
+<div class="mt-5 pt-4 border-t border-surface-container space-y-3">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">security</span>
+<span>Konfigurasi Anti-Cheat CBT</span>
+</span>
+<!-- Rule 1: Acak Soal -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-medium block">Acak Urutan Soal (Shuffle)</span>
+<span class="text-[11px] text-on-surface-variant block">Tiap siswa menerima urutan berbeda</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Rule 2: Acak Opsi Jawaban -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-medium block">Acak Opsi Pilihan (A-E)</span>
+<span class="text-[11px] text-on-surface-variant block">Posisi kunci jawaban berotasi dinamis</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Rule 3: Lockdown Browser / Anti Buka Tab -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-medium block">Kunci Tab &amp; Blokir Copy-Paste</span>
+<span class="text-[11px] text-on-surface-variant block">Peringatan otomatis &amp; auto-submit</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Rule 4: Tampilkan Nilai Langsung -->
+<div class="flex items-center justify-between py-1">
+<div class="pr-2">
+<span class="font-body-sm text-body-sm text-on-surface font-medium block">Rilis Skor Otomatis Pasca Ujian</span>
+<span class="text-[11px] text-on-surface-variant block">Siswa dapat langsung melihat skor KKTP</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- Schedule / Publishing Actions -->
+<div class="mt-6 pt-3 space-y-2">
+<button class="w-full inline-flex items-center justify-center gap-2 rounded bg-secondary hover:opacity-90 text-on-secondary px-4 py-2.5 font-label-md text-label-md font-bold shadow-md transition-all" onclick="alert('Jadwal CBT Berhasil Diterbitkan untuk Kelas X AKL 1 &amp; 2! Akses token siswa telah digenerate.')" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Jadwalkan CBT ke Kelas X AKL</span>
+</button>
+<button class="w-full inline-flex items-center justify-center gap-1.5 rounded bg-surface-container-low hover:bg-surface-container text-on-surface px-3 py-2 font-label-sm text-label-sm font-semibold transition-colors" onclick="alert('Draf paket disimpan ke penyimpanan cloud lokal.')" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Simpan Sebagai Draf Paket</span>
+</button>
+</div>
+</div>
+<!-- Quick Tips Card for Vocational Accounting Teachers -->
+<div class="rounded-xl bg-surface-container-low p-4 text-on-surface space-y-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span class="font-label-md text-label-md font-bold">Panduan AKL CBT Kurikulum Merdeka</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Gunakan tipe soal <strong>Kasus Jurnal</strong> dengan stimulus faktur nyata agar peserta didik terlatih menganalisis bukti memorial sebelum praktik penyusunan Neraca Lajur pada software spreadsheet akuntansi.
+        </p>
+</div>
+</div>
+</div>
+<!-- Modal Dialog: Import Excel / Word (Hidden by default, triggered by Impor button) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4" id="import-dialog">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">cloud_upload</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Impor Soal Excel / Format AIKEN</h3>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container" onclick="document.getElementById('import-dialog').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Unggah berkas template naskah soal standar AKUN LMS (.xlsx atau .docx). Format mencakup kode akun (CoA), stimulus transaksi, dan kunci jawaban otomatis.
+      </p>
+<div class="border-2 border-dashed border-outline-variant hover:border-primary rounded-xl p-6 text-center bg-surface-container-low flex flex-col items-center justify-center cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[42px] text-primary mb-2">upload_file</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tarik &amp; lepas file Excel / Word di sini</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Maksimal ukuran 15 MB (.xlsx, .docx, .aiken)</span>
+</div>
+<div class="flex items-center justify-between text-xs pt-2">
+<a class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-1" href="#" onclick="alert('Mengunduh template_soal_akuntansi_v2.xlsx')">
+<span class="material-symbols-outlined text-[14px]">download</span> Unduh Template Excel (.XLSX)
+        </a>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm" onclick="document.getElementById('import-dialog').classList.add('hidden')">Batal</button>
+<button class="px-4 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold" onclick="alert('Proses impor berkas berhasil! 25 butir soal baru ditambahkan.'); document.getElementById('import-dialog').classList.add('hidden')">Proses Impor</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

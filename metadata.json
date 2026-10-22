@@ -1,0 +1,6 @@
+{
+  "name": "AKUN LMS - SMK Akuntansi & Keuangan Lembaga",
+  "description": "Platform pembelajaran dan simulasi siklus akuntansi interaktif SMK Akuntansi & Keuangan Lembaga (AKL) Kurikulum Merdeka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

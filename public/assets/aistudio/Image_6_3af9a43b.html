@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface-container-lowest":"#ffffff","tertiary-container":"#002a44","secondary-fixed":"#85f8c4","secondary":"#006c4a","tertiary-fixed":"#cce5ff","surface-container-low":"#eff4ff","on-primary-fixed":"#011d35","on-primary-fixed-variant":"#314863","inverse-primary":"#b0c9e8","tertiary-fixed-dim":"#93ccff","on-tertiary-container":"#2e95da","surface-tint":"#49607c","secondary-container":"#82f5c1","surface-variant":"#d3e4fe","on-tertiary":"#ffffff","surface-container":"#e5eeff","outline":"#74777e","background":"#f8f9ff","on-primary-container":"#7991af","on-tertiary-fixed-variant":"#004b73","on-secondary":"#ffffff","on-secondary-fixed-variant":"#005137","inverse-surface":"#213145","surface-container-high":"#dce9ff","on-surface-variant":"#43474d","outline-variant":"#c3c6ce","surface-dim":"#cbdbf5","on-secondary-fixed":"#002114","surface-bright":"#f8f9ff","on-error-container":"#93000a","primary-fixed-dim":"#b0c9e8","on-error":"#ffffff","secondary-fixed-dim":"#68dba9","on-surface":"#0b1c30","error-container":"#ffdad6","on-tertiary-fixed":"#001d31","primary-container":"#0f2942","primary":"#001428","primary-fixed":"#d1e4ff","on-background":"#0b1c30","inverse-on-surface":"#eaf1ff","on-secondary-container":"#00714e","surface":"#f8f9ff","tertiary":"#001524","error":"#ba1a1a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"1rem","space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","gutter":"1rem","margin-desktop":"2rem"},"fontFamily":{"data-mono-md":["JetBrains Mono"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"data-mono-sm":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"data-mono-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"data-mono-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 shadow-[0_1px_8px_rgba(15,41,66,0.06)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[280px]"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">AKUN LMS</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight tracking-wider uppercase">SMK Akuntansi</span></div></div><div class="h-6 w-[1px] bg-surface-container-high hidden sm:block"></div><div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>X AKL 1 • Dasar Akuntansi</div></div><div class="flex-1 max-w-xl mx-auto hidden md:block"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-4 py-2 bg-surface-container-low text-on-surface placeholder:text-on-surface-variant rounded-xl font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Cari materi, jurnal, LKPD, kode akun, atau tugas..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="relative"><button aria-label="Notifikasi" class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute 0 top-0.5 right-0.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="h-6 w-[1px] bg-surface-container-high hidden sm:block"></div><div class="flex items-center gap-space-sm pl-1"><div class="text-right hidden lg:block"><p class="font-label-md text-label-md text-on-surface leading-tight">Siti Nurhaliza</p><p class="font-label-sm text-label-sm text-on-surface-variant leading-none">Siswa • NISN 00782194</p></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-lowest z-30 shadow-[0_1px_8px_rgba(15,41,66,0.04)] flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="px-space-sm py-space-xs mb-space-xs"><p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pembelajaran Akuntansi</p></div><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard-siswa" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></div><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed opacity-0 group-hover:opacity-100 transition-opacity"></span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="kelas-saya" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">school</span><span class="font-label-md text-label-md">Kelas Saya</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="materi-pembelajaran" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">menu_book</span><span class="font-label-md text-label-md">Materi Pembelajaran</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="lkpd-interaktif" href="#"><div class="flex items-center"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">assignment</span><span class="font-label-md text-label-md">LKPD Interaktif</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2 Perlu Dikerjakan</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="tugas-saya" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">task</span><span class="font-label-md text-label-md">Tugas Saya</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="kuis-dan-ujian" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">quiz</span><span class="font-label-md text-label-md">Kuis &amp; Ujian</span></a><div class="pt-space-sm pb-space-xs"><p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm">Evaluasi &amp; Portofolio</p></div><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="nilai-saya" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">grade</span><span class="font-label-md text-label-md">Nilai Saya</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="progres-belajar" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">trending_up</span><span class="font-label-md text-label-md">Progres Belajar</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="presensi-dan-kehadiran" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">how_to_reg</span><span class="font-label-md text-label-md">Presensi &amp; Kehadiran</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="portofolio-akuntansi" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">folder_special</span><span class="font-label-md text-label-md">Portofolio Akuntansi</span></a><a class="flex items-center px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="kalender-akademik" href="#"><span class="material-symbols-outlined text-[20px] mr-3 text-on-surface-variant">calendar_month</span><span class="font-label-md text-label-md">Kalender Akademik</span></a></nav></div><div class="p-space-md bg-surface-container-low/60 m-space-md rounded-xl space-y-2"><a class="flex items-center px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-lowest hover:text-on-surface transition-all" data-path="pengaturan-akun" href="#"><span class="material-symbols-outlined text-[18px] mr-2.5 text-on-surface-variant">settings</span><span class="font-label-md text-label-md">Pengaturan Akun</span></a><div class="flex items-center justify-between px-3 pt-2 text-on-surface-variant"><span class="font-label-sm text-label-sm font-data-mono-sm">AKL-v2.4.0</span><span class="w-2 h-2 rounded-full bg-secondary" title="Sistem Sinkron"></span></div></div></aside><div class="pl-72"><main class="w-full pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-space-md sm:px-margin-desktop py-space-md max-w-[1560px] mx-auto w-full space-y-space-lg">
+<!-- Section 1: Navigation Breadcrumb & Meta Banner -->
+<div class="flex flex-col gap-space-sm">
+<nav class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant flex-wrap">
+<a class="hover:text-primary transition-colors" href="#">Pembelajaran</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Kuis &amp; Ujian</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Penilaian Formatif 2</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Hasil &amp; Pembahasan</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-data-mono-sm text-data-mono-sm font-semibold">AKL-X-PF02</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Penilaian Telah Dinilai Resmi</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">
+            Hasil Evaluasi &amp; Pembahasan: Penilaian Formatif 2 - Analisis Transaksi &amp; Jurnal Umum
+          </h1>
+<div class="flex items-center gap-y-1 gap-x-4 flex-wrap font-body-sm text-body-sm text-on-surface-variant pt-0.5">
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">person</span> Siti Nurhaliza (NISN: 00723410042)</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">class</span> Kelas X AKL 1</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">event_available</span> Diserahkan: 15 Mei 2025, 10:15 WIB</span>
+<span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">timer</span> Durasi: 45 Menit 46 Detik</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-center">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+            Tanya Pengajar
+          </button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Unduh Bukti (PDF)
+          </button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+            Dashboard Siswa
+          </button>
+</div>
+</div>
+</div>
+<!-- Section 2: Score Summary KPI Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Final Score Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Skor Evaluasi Akhir</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary tracking-tight">85.0</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            TUNTAS (KKTP 75.0)
+          </span>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-semibold">+10.0 Poin</span>
+</div>
+</div>
+<!-- Question Composition Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Rincian Butir Soal</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">20 Soal</span>
+</div>
+<div class="mt-space-sm flex items-center gap-3">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-secondary">17</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Benar</span>
+</div>
+<span class="text-on-surface-variant font-data-mono-sm">•</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-error">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Salah</span>
+</div>
+<span class="text-on-surface-variant font-data-mono-sm">•</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-outline">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kosong</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<div class="w-full h-2 rounded-full bg-surface-container-high flex overflow-hidden">
+<div class="h-full bg-secondary" style="width: 85%;"></div>
+<div class="h-full bg-error" style="width: 10%;"></div>
+<div class="h-full bg-outline-variant" style="width: 5%;"></div>
+</div>
+</div>
+</div>
+<!-- Accuracy & Speed -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Akurasi &amp; Efisiensi</span>
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary tracking-tight">85%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Akurasi Net</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pace</span>
+            Rata-rata 2.2 mnt / soal
+          </span>
+<span class="text-secondary font-semibold font-data-mono-sm">Optimal</span>
+</div>
+</div>
+<!-- Cohort Benchmark -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-surface-tint"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Komparasi Kelas X AKL 1</span>
+<span class="material-symbols-outlined text-primary text-[18px]">leaderboard</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary tracking-tight">#6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">dari 36 Siswa</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Rata-rata Kelas: <strong class="text-primary font-data-mono-sm">76.4</strong></span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-data-mono-sm text-primary font-semibold">Top 16%</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Diagnostic Competency Breakdown (CP & Sub-CP) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-space-xs">
+<div>
+<h2 class="font-title-md text-title-md text-primary tracking-tight">Analisis Diagnostik Capaian Pembelajaran (CP)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pemetaan penguasaan indikator kompetensi dasar akuntansi institusional</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 3 dari 4 Sub-Kompetensi Tuntas
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- CP 01 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-semibold">CP.01</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">100% Sempurna</span>
+</div>
+<p class="font-label-md text-label-md text-primary">Saldo Normal &amp; Persamaan Dasar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Aturan penambahan dan pengurangan saldo aset, utang, modal.</p>
+</div>
+<div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 100%;"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-semibold mt-1 inline-block">5/5 Soal Terjawab Benar</span>
+</div>
+</div>
+<!-- CP 02 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-semibold">CP.02</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">100% Tuntas</span>
+</div>
+<p class="font-label-md text-label-md text-primary">Analisis Bukti Transaksi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Identifikasi faktur, nota debet/kredit, kuitansi eksternal.</p>
+</div>
+<div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full" style="width: 100%;"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-secondary font-semibold mt-1 inline-block">5/5 Soal Terjawab Benar</span>
+</div>
+</div>
+<!-- CP 03 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-semibold">CP.03</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">80% Cukup</span>
+</div>
+<p class="font-label-md text-label-md text-primary">Format Indentasi Ayat Jurnal</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Tata kelola kolom debet-kredit, referensi pos, &amp; narasi transaksi.</p>
+</div>
+<div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 80%;"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-semibold mt-1 inline-block">4/5 Soal Terjawab Benar</span>
+</div>
+</div>
+<!-- CP 04 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-data-mono-sm text-data-mono-sm text-error font-semibold">CP.04</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">60% Penguatan</span>
+</div>
+<p class="font-label-md text-label-md text-primary">Jurnal Majemuk &amp; Wesel Bayar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Transaksi kombinasi kas-termin, termin 2/10, n/30, &amp; liabilitas wesel.</p>
+</div>
+<div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full" style="width: 60%;"></div>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-error font-semibold mt-1 inline-block">3/5 Soal (2 Salah, 1 Kosong)</span>
+</div>
+</div>
+</div>
+<!-- Pedagogical AI Insight Banner -->
+<div class="bg-surface-container-high/60 p-space-md rounded-xl flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="space-y-0.5 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Catatan Pedagogis AI Tutor Sistem</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Model Diagnosis AKL-v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "Siti menunjukkan penguasaan sangat tinggi pada pengelompokan akun dasar dan mekanisme saldo normal (100%). Namun, terdeteksi kerancuan minor pada <strong>pembedaan pembebanan awal perlengkapan vs pencatatan sebagai aset lancar</strong> serta kalkulasi diskon termin kredit (2/10, n/30). Disarankan mempelajari modul <em>Ayat Jurnal Penyesuaian (AJP)</em> sebelum melangkah ke Siklus Penutupan Buku."
+          </p>
+</div>
+</div>
+</div>
+<!-- Section 4: Interactive Review Workbench (Split 8 Col vs 4 Col) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Filter Tabs & Detailed Question Review (8 Cols) -->
+<div class="lg:col-span-8 space-y-space-md">
+<!-- Filter bar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between gap-2 overflow-x-auto">
+<div class="flex items-center gap-1.5">
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">
+              Semua Soal (20)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">
+              Jawaban Benar (17)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">
+              Jawaban Salah (2)
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all">
+              Perlu Pembahasan Khusus (3)
+            </button>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm hidden sm:block pr-2">
+            Urutan: <strong class="text-primary">Nomor Soal 01-20</strong>
+</div>
+</div>
+<!-- Question Item 08 (Example: BENAR) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary"></div>
+<!-- Header question status -->
+<div class="flex items-center justify-between gap-space-md flex-wrap">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-secondary text-on-secondary font-data-mono-md text-data-mono-md font-bold flex items-center justify-center">
+                08
+              </span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Sub-CP: Jurnal Majemuk &amp; Liabilitas</span>
+<p class="font-title-md text-title-md text-primary">Pembelian Aset Tetap dengan Pembiayaan Campuran</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Jawaban Anda Benar (+5.0 Poin)
+              </span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Waktu: 2m 14s</span>
+</div>
+</div>
+<!-- Question Stimulus & Transaction Case -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono-sm uppercase">Dokumen Sumber: Faktur &amp; Bukti Kas Keluar</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-data-mono-sm text-data-mono-sm">BKK-10/014</span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-relaxed">
+              Pada tanggal 14 Oktober 2026, <strong>Bengkel Maju Jaya</strong> membeli seperangkat peralatan servis otomotif senilai <strong>Rp12.000.000,00</strong>. Dari jumlah tersebut, sebesar <strong>Rp4.000.000,00</strong> dibayar tunai melalui kas, sedangkan sisanya diserahkan berupa <strong>Wesel Bayar</strong> jangka waktu 60 hari tanpa bunga.
+            </p>
+<p class="font-label-md text-label-md text-on-surface pt-1">
+              Bagaimanakah pencatatan ayat jurnal umum yang benar dan sesuai standar SAK EMKM bagi Bengkel Maju Jaya?
+            </p>
+</div>
+<!-- Answer Options with Comparison -->
+<div class="space-y-2.5">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pilihan Jawaban &amp; Rekap Respons Anda:</p>
+<!-- Option A (Distractor) -->
+<div class="p-3 rounded-lg bg-surface-container-low/50 opacity-70 flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">A</span>
+<div class="font-body-sm text-body-sm text-on-surface space-y-0.5">
+<p>(D) Peralatan Servis Rp12.000.000 ; (K) Kas Rp12.000.000</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pengecoh: Mengabaikan wesel bayar yang diterbitkan.</span>
+</div>
+</div>
+<!-- Option B (Selected by Student & Correct) -->
+<div class="p-3 rounded-lg bg-secondary-container/40 flex items-start justify-between gap-3 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">B</span>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Pilihan Anda (Kunci Jawaban Resmi)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">task_alt</span>
+</div>
+<!-- Mini T-account representation -->
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface space-y-0.5 bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex justify-between w-full max-w-md">
+<span>(D) 121 - Peralatan Servis</span>
+<span class="font-bold">Rp12.000.000,00</span>
+</div>
+<div class="flex justify-between w-full max-w-md pl-4 text-on-surface-variant">
+<span>(K) 111 - Kas</span>
+<span>Rp4.000.000,00</span>
+</div>
+<div class="flex justify-between w-full max-w-md pl-4 text-on-surface-variant">
+<span>(K) 212 - Utang Wesel</span>
+<span>Rp8.000.000,00</span>
+</div>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shrink-0">Benar</span>
+</div>
+<!-- Option C -->
+<div class="p-3 rounded-lg bg-surface-container-low/50 opacity-70 flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">C</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<p>(D) Beban Peralatan Rp12.000.000 ; (K) Kas Rp4.000.000 ; (K) Utang Usaha Rp8.000.000</p>
+</div>
+</div>
+<!-- Option D -->
+<div class="p-3 rounded-lg bg-surface-container-low/50 opacity-70 flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-surface-container text-on-surface-variant font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">D</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<p>(D) Kas Rp4.000.000 ; (D) Utang Wesel Rp8.000.000 ; (K) Peralatan Servis Rp12.000.000</p>
+</div>
+</div>
+</div>
+<!-- Pedagogical Explanation Section -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-2">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-primary">lightbulb</span>
+              Pembahasan &amp; Kaidah Akuntansi (Pedagogical Rationale)
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>1. Klasifikasi Aset:</strong> Peralatan servis memiliki masa manfaat &gt; 1 tahun, sehingga diakui sebagai Aset Tetap, bukan Beban. Sesuai aturan saldo normal, aset bertambah dicatat di sisi <strong>Debet</strong> sebesar nilai perolehannya (Rp12.000.000,00).<br/>
+<strong>2. Pengeluaran Kas:</strong> Pengeluaran uang tunai mengurangi aset lancar Kas di sisi <strong>Kredit</strong> sebesar Rp4.000.000,00.<br/>
+<strong>3. Pengakuan Wesel:</strong> Janji tertulis formal diakui dalam akun <em>Utang Wesel (Notes Payable)</em>, bukan Utang Usaha biasa. Liabilitas bertambah dicatat di sisi <strong>Kredit</strong> sebesar sisa kewajiban (Rp8.000.000,00). Persamaan akuntansi tetap seimbang (Balance).
+            </p>
+<div class="pt-1 flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tagging CoA:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-data-mono-sm text-data-mono-sm">121 Aset Tetap</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-data-mono-sm text-data-mono-sm">111 Kas</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-data-mono-sm text-data-mono-sm">212 Utang Wesel</span>
+</div>
+</div>
+</article>
+<!-- Question Item 09 (Example: SALAH) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<!-- Header question status -->
+<div class="flex items-center justify-between gap-space-md flex-wrap">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-error text-on-error font-data-mono-md text-data-mono-md font-bold flex items-center justify-center">
+                09
+              </span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Sub-CP: Analisis Perlengkapan &amp; Termin Kredit</span>
+<p class="font-title-md text-title-md text-primary">Pencatatan Pembelian Perlengkapan Toko Secara Kredit</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+                Jawaban Anda Salah (0.0 / 5.0 Poin)
+              </span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Waktu: 1m 48s</span>
+</div>
+</div>
+<!-- Question Stimulus & Transaction Case -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono-sm uppercase">Dokumen Sumber: Faktur Pembelian (Asli)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-data-mono-sm text-data-mono-sm">FAK-8812</span>
+</div>
+<p class="font-body-md text-body-md text-primary leading-relaxed">
+              Pada tanggal 18 Oktober 2026, UD Berkah Makmur membeli perlengkapan toko (supplies) dari CV Graha Abadi seharga <strong>Rp3.500.000,00</strong> secara kredit dengan syarat pembayaran <strong>2/10, n/30</strong>.
+            </p>
+<p class="font-label-md text-label-md text-on-surface pt-1">
+              Berdasarkan pendekatan aset (neraca) yang dianut perusahaan, bagaimanakah pencatatan transaksi tersebut ke dalam Jurnal Umum?
+            </p>
+</div>
+<!-- Answer Options with Error Breakdown -->
+<div class="space-y-2.5">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pilihan Jawaban &amp; Diagnosa Jawaban Anda:</p>
+<!-- Option B (The Official Key) -->
+<div class="p-3 rounded-lg bg-secondary-container/30 flex items-start justify-between gap-3 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">B</span>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Kunci Jawaban Resmi (Pendekatan Aset)</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface space-y-0.5 bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex justify-between w-full max-w-md">
+<span>(D) 115 - Perlengkapan Toko</span>
+<span class="font-bold text-secondary">Rp3.500.000,00</span>
+</div>
+<div class="flex justify-between w-full max-w-md pl-4 text-on-surface-variant">
+<span>(K) 211 - Utang Usaha</span>
+<span>Rp3.500.000,00</span>
+</div>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shrink-0">Kunci Jawaban</span>
+</div>
+<!-- Option C (Chosen by student - INCORRECT) -->
+<div class="p-3 rounded-lg bg-error-container/40 flex items-start justify-between gap-3 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-md bg-error text-on-error font-data-mono-sm text-data-mono-sm flex items-center justify-center shrink-0">C</span>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-error">Jawaban Siti Nurhaliza (Salah)</span>
+<span class="material-symbols-outlined text-error text-[18px]">highlight_off</span>
+</div>
+<div class="font-data-mono-sm text-data-mono-sm text-on-surface space-y-0.5 bg-surface-container-lowest p-2 rounded-lg">
+<div class="flex justify-between w-full max-w-md text-error">
+<span>(D) 518 - Beban Perlengkapan Toko</span>
+<span class="font-bold">Rp3.500.000,00</span>
+</div>
+<div class="flex justify-between w-full max-w-md pl-4 text-on-surface-variant">
+<span>(K) 211 - Utang Usaha</span>
+<span>Rp3.500.000,00</span>
+</div>
+</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm shrink-0">Jawaban Anda</span>
+</div>
+<!-- Option A & D (Collapsed) -->
+<div class="p-3 rounded-lg bg-surface-container-low/50 opacity-60 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>(A) Beban Perlengkapan (D) Rp3.430.000 ; Potongan (K) Rp70.000 ; Kas (K) Rp3.500.000</span>
+<span class="font-label-sm text-label-sm">Pengecoh</span>
+</div>
+</div>
+<!-- Misconception Diagnostic Analysis -->
+<div class="bg-surface-container-high/60 p-space-md rounded-xl space-y-2">
+<div class="flex items-center gap-2 text-error font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-error">report_problem</span>
+              Analisis Miskonsepsi &amp; Solusi Perbaikan
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>Letak Kesalahan Anda:</strong> Siti memilih mendebit akun <em>Beban Perlengkapan Toko</em>. Ini adalah pendekatan laba rugi, padahal soal secara eksplisit menentukan <u>pendekatan aset (neraca)</u>.<br/>
+<strong>Kaidah Pedagogis:</strong> Pada saat perlengkapan dibeli, barang tersebut masih berupa persediaan fisik (aset lancar) yang belum terpakai atau dikonsumsi habis. Oleh karena itu, akun yang diakui adalah <strong>115 - Perlengkapan Toko</strong> di sisi Debet.<br/>
+<strong>Catatan Syarat 2/10, n/30:</strong> Diskon 2% hanya diakui jika pembayaran dilakukan dalam tempo 10 hari. Pada tanggal transaksi pembelian, utang usaha dicatat sebesar <strong>nilai bruto (Rp3.500.000,00)</strong> penuh.
+            </p>
+<div class="pt-2 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span>Rujukan Modul:</span>
+<span class="text-primary font-semibold">Buku Paket AKL Kelas X - Hal. 114 (Pendekatan Neraca vs Beban)</span>
+</div>
+<button class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm hover:underline">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Buka Catatan Materi Terkait
+              </button>
+</div>
+</div>
+</article>
+<!-- Pagination / Question Stepper footer -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<button class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">west</span> Soal Sebelumnya (No. 07)
+          </button>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Menampilkan Soal 08 - 09 dari 20 Butir</span>
+<button class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all">
+            Soal Selanjutnya (No. 10) <span class="material-symbols-outlined text-[16px]">east</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Question Matrix Navigator & Next Actions (4 Cols) -->
+<aside class="lg:col-span-4 space-y-space-md">
+<!-- Question Grid Matrix -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-primary">Peta Jawaban Siswa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Klik nomor untuk melompat ke pembahasan</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">grid_view</span>
+</div>
+<!-- Color Legend -->
+<div class="flex items-center gap-3 text-label-sm font-label-sm text-on-surface-variant flex-wrap pt-0.5">
+<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Benar (17)</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> Salah (2)</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span> Dilewati (1)</span>
+</div>
+<!-- 20-Question Grid -->
+<div class="grid grid-cols-5 gap-2 pt-1 font-data-mono-sm text-data-mono-sm">
+<!-- 01 - 07 (Benar) -->
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">01</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">02</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">03</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">04</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">05</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">06</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">07</button>
+<!-- 08 (Active Benar) -->
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-bold flex items-center justify-center shadow-md ring-2 ring-primary">08</button>
+<!-- 09 (Active Salah) -->
+<button class="h-10 rounded-lg bg-error text-on-error font-bold flex items-center justify-center shadow-md ring-2 ring-primary">09</button>
+<!-- 10 - 14 (Benar) -->
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">10</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">11</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">12</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">13</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">14</button>
+<!-- 15 (Salah) -->
+<button class="h-10 rounded-lg bg-error text-on-error font-semibold flex items-center justify-center hover:opacity-90 transition-all">15</button>
+<!-- 16 - 19 (Benar) -->
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">16</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">17</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">18</button>
+<button class="h-10 rounded-lg bg-secondary text-on-secondary font-semibold flex items-center justify-center hover:opacity-90 transition-all">19</button>
+<!-- 20 (Dilewati / Kosong) -->
+<button class="h-10 rounded-lg bg-surface-container text-on-surface-variant font-semibold flex items-center justify-center hover:bg-surface-container-high transition-all">20</button>
+</div>
+<div class="pt-space-xs text-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Klik nomor untuk membuka analisis mendalam</span>
+</div>
+</div>
+<!-- Teacher's Note Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm relative overflow-hidden">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary">Catatan Guru Pengampu</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ibu Ratna Dewi, S.Pd. • Guru Produktif AKL</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl font-body-sm text-body-sm text-on-surface italic leading-relaxed">
+            "Kerja yang sangat baik, Siti! Pemahaman konsep dasar debit kredit sudah sangat matang dan rapi. Hanya perlu penguatan pada transaksi termin potongan dan penyesuaian akhir periode. Jangan ragu bertanya di sesi praktikum laboratorium besok ya!"
+          </div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">15 Mei 2025, 11:20 WIB</span>
+<button class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm hover:underline">
+<span class="material-symbols-outlined text-[16px]">reply</span> Balas Pesan Guru
+            </button>
+</div>
+</div>
+<!-- Remedial & Self-Directed Next Step -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_stories</span>
+<h3 class="font-title-md text-title-md text-primary">Rekomendasi Remediasi Mandiri</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sistem telah menyusun latihan kilat terarah untuk menuntaskan 2 indikator yang belum sempurna.
+          </p>
+<div class="bg-surface-container-low p-3 rounded-lg space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Drill 3 Soal: Aset vs Beban</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-data-mono-sm text-data-mono-sm">5 Menit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Latihan identifikasi perlengkapan habis pakai &amp; termin pembayaran 2/10, n/30.</p>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-secondary hover:bg-secondary-fixed-dim text-on-secondary font-label-md text-label-md transition-all shadow-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+            Mulai Latihan Penguatan (5 Menit)
+          </button>
+</div>
+<!-- Reference Documents & Syllabus Tracking -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Materi Terkait Kurikulum Merdeka</span>
+<div class="space-y-2">
+<a class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-all" href="#">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">description</span>
+<span class="font-label-md text-label-md text-primary truncate">LKPD 03: Siklus Jurnal Penyesuaian</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-all" href="#">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">video_library</span>
+<span class="font-label-md text-label-md text-primary truncate">Video Pembahasan: Kasus Transaksi Wesel</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div></main></div></body></html>
